@@ -2,6 +2,7 @@ package net.arikia.dev.drpc;
 
 import com.sun.jna.Library;
 import com.sun.jna.Native;
+import net.arikia.dev.drpc.util.OS;
 
 import java.io.*;
 
@@ -124,7 +125,7 @@ public final class DiscordRPC {
 	//Load DLL depending on the user's architecture.
 	private static void loadDLL() {
 		String name = System.mapLibraryName("discord-rpc");
-		OSUtil osUtil = new OSUtil();
+		OS osUtil = new OS();
 		String finalPath;
 		String dir;
 
