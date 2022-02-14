@@ -1,4 +1,4 @@
-package net.arikia.dev.drpc;
+package net.arikia.dev.drpc.util;
 
 /**
  * @author DeJay
@@ -6,7 +6,7 @@ package net.arikia.dev.drpc;
  * <p>
  * Class containing utils for detecting the user's OS.
  */
-public final class OSUtil {
+public final class OS {
 
 	public boolean isMac() {
 		return getOS().toLowerCase()
